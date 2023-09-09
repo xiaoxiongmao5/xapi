@@ -1,0 +1,16 @@
+dubbo:
+  registries:
+    nacos:
+      protocol: nacos
+      address: nacos:8848
+  consumer:
+    references:
+      UserIntefaceInfoClientImpl:
+        protocol: tri
+        interface: "" # 设置为对应的接口名称
+      IntefaceInfoClientImpl:
+        protocol: tri
+        interface: "" # 设置为对应的接口名称
+      UserInfoClientImpl:
+        protocol: tri
+        interface: "" # 设置为对应的接口名称

@@ -1,0 +1,17 @@
+dubbo:
+  registries:
+    nacos:
+      protocol: nacos
+      address: nacos:8848
+  protocols:
+    triple:
+      name: tri
+      # port: 20000
+  provider:
+    services:
+      UserIntefaceInfoServerImpl:
+        interface: "" # read from stub
+      IntefaceInfoServerImpl:
+        interface: ""
+      UserInfoServerImpl:
+        interface: ""

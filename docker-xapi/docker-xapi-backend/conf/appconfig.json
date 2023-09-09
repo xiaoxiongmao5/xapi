@@ -1,0 +1,18 @@
+{
+    "database": {
+        "host": "localhost",
+        "port": 3306,
+        "dbname":"xapi",
+        "username": "root",
+        "password": "yourpassword",
+        "savePath":"xapiuser:xapi123456@tcp(mysql)/xapi?charset=utf8&parseTime=true",
+        "savePath1":"root:@/xapi?charset=utf8&parseTime=true"
+      },
+      "server": {
+        "port": 8090
+      },
+      "nacos": {
+        "host": "nacos",
+        "port": 8848
+      }
+}
