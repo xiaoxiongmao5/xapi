@@ -4,8 +4,26 @@ networks:
   xapi_net:
 
 services:
+  # frontend:
+  #   image: xapi-frontend-image:1.0.0
+  #   # build:
+  #   #   context: .
+  #   #   dockerfile: Dockerfile
+  #   ports:
+  #     - "80:80"  # 映射容器的 80 端口到主机的 80 端口
+  #   depends_on:
+  #     - backend  # 前端容器依赖后端容器
+  #   # volumes:
+  #     # - ./docker-nginx/nginx.conf:/etc/nginx/nginx.conf
+  #     # - ./docker-nginx/logs:/var/log/nginx
+  #     # - ./docker-nginx/wwwlogs:/data/wwwlogs
+  #     # - ./docker-xapi-frontend/:/usr/share/nginx/html
+  #   networks:
+  #     - xapi_net
+
   backend:
-    image: xiaoxiongmao5/xapi-backend:1.0.0 # 后端项目的Docker镜像名称
+    image: ghcr.io/xiaoxiongmao5/xapi-backend:1.0.1 # 后端项目的Docker镜像名称
+    container_name: xapi-backend
     ports:
       - "8090:8090" # 映射后端项目的端口
     depends_on:
@@ -17,7 +35,7 @@ services:
       - ./docker-xapi-backend/log:/app/log
     extra_hosts:
       # - "xpi-gateway.com:192.168.2.104" # 往容器内/etc/hosts文件中添加记录 local
-      - "xpi-gateway.com:166.1.190.73"  #linux
+      - "xpi-gateway.com:192.168.0.47"  #linux
     environment:
       - DB_HOST=mysql     # 设置后端项目连接的MySQL主机名
       - DB_PORT=3307      # 设置后端项目连接的MySQL端口
@@ -34,7 +52,8 @@ services:
     # command: ["./scripts/wait-for-nacos.sh", "./xapi-backend"]  #command内应该是可执行文件
 
   gateway:
-    image: xiaoxiongmao5/xapi-gateway:1.0.0 # 网关项目的Docker镜像名称
+    image: ghcr.io/xiaoxiongmao5/xapi-gateway:1.0.1 # 网关项目的Docker镜像名称
+    container_name: xapi-gateway
     ports:
       - "8080:8080" # 映射网关项目的端口
     depends_on:
@@ -52,6 +71,7 @@ services:
 
   mysql:
     image: mysql:8.0 # MySQL的Docker镜像名称，你可以根据需要选择版本
+    container_name: xapi-mysql
     environment:
       - MYSQL_ROOT_PASSWORD=123456 # 设置MySQL的root密码
       - MYSQL_ALLOW_EMPTY_PASSWORD=no
@@ -71,7 +91,7 @@ services:
 
   nacos:
     image: nacos/nacos-server:v2.1.2-slim # Nacos的Docker镜像名称
-    # container_name: nacos
+    container_name: xapi-nacos
     restart: always
     volumes:
       - ./docker-nacos2.1.2-slim/logs:/home/nacos/logs

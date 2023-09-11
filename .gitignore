@@ -3,3 +3,5 @@ docker-xapi/docker-mysql8.0/*
 docker-xapi/docker-nacos2.1.2-slim/*
 docker-xapi/docker-xapi-gateway/log/*
 docker-xapi/docker-xapi-backend/log/*
+docker-xapi/docker-nginx/logs/*
+docker-xapi/docker-nginx/wwwlogs/nginx.log
