@@ -6,13 +6,13 @@ networks:
 services:
   frontend:
     image: xiaoxiongmao5/xapi-frontend:1.0.2
+    container_name: xapi-frontend
     ports:
       - "80:80"
     restart: always
     tty: true
-    extra_hosts:
-      # - "xapi-backend.com:192.168.0.47"
-      - "xapi-backend.com:60.204.157.168"  #linux
+    networks:
+      - xapi_net
 
   backend:
     image: xiaoxiongmao5/xapi-backend:1.0.3
