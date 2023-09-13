@@ -8,6 +8,19 @@
 
 管理员可以接入并发布接口，同时统计分析各接口的调用情况；用户可以注册登录并开通接口调用权限，浏览接口以及在线进行调试，并可以通过 客户端SDK 轻松调用接口。
 
+## 项目展示
+
+<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/daf56d48-15fd-49fd-a055-abf110c9b226" width="250">
+<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/fc78748e-c042-4d21-b58a-8f5d74d44786" width="250">
+<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/a36948a2-69ed-4a37-b500-457884047b50" width="250">
+<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/7db8296a-8e7b-4085-8cf5-7d369768cd8b " width="249">
+
+![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/694fc2df-8f64-4905-b073-c193832d823c)
+
+
+
+
+
 ## 项目架构设计
 
 这个项目的架构是一个典型的分布式系统，包括多个独立的子项目，每个子项目具有特定的功能和职责。以下是每个子项目的功能和关系。
@@ -107,3 +120,9 @@
     3. 下载项目到部署服务器上，修改配置文件，go build 编译，运行可执行文件
 4. 部署 `前端 frontend` 项目
     build项目后，放在部署服务器上，使用Nginx代理访问
+
+## 欢迎贡献
+
+项目需要大家的支持，期待更多小伙伴的贡献，你可以：
+
+* 对于项目中的Bug和优化建议，可以提issues，我会积极响应。
