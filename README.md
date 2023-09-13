@@ -1,7 +1,6 @@
 # xapi (API开放平台)
 
-在线体验地址： <a href="http://60.204.157.168" target="_blank">XAPI</a>
-
+在线访问： <a href="http://60.204.157.168" target="_blank">XAPI</a>
 
 ## 项目介绍
 
