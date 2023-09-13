@@ -15,7 +15,7 @@ services:
       - xapi_net
 
   backend:
-    image: xiaoxiongmao5/xapi-backend:1.0.4
+    image: xiaoxiongmao5/xapi-backend:1.0.5
     container_name: xapi-backend
     ports:
       - "8090:8090"
