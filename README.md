@@ -20,10 +20,8 @@
 
 ## 项目展示
 
-<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/daf56d48-15fd-49fd-a055-abf110c9b226" width="350">
-<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/fc78748e-c042-4d21-b58a-8f5d74d44786" width="350">
-<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/a36948a2-69ed-4a37-b500-457884047b50" width="350">
-<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/7db8296a-8e7b-4085-8cf5-7d369768cd8b " width="350">
+
+![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/3dc9cfd9-097e-4ae6-a5bc-0d27953898ec)
 
 ![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/694fc2df-8f64-4905-b073-c193832d823c)
 
