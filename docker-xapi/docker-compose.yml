@@ -5,7 +5,7 @@ networks:
 
 services:
   frontend:
-    image: xiaoxiongmao5/xapi-frontend:1.0.2
+    image: xiaoxiongmao5/xapi-frontend:1.0.3
     container_name: xapi-frontend
     ports:
       - "80:80"
@@ -15,7 +15,7 @@ services:
       - xapi_net
 
   backend:
-    image: xiaoxiongmao5/xapi-backend:1.0.3
+    image: xiaoxiongmao5/xapi-backend:1.0.4
     container_name: xapi-backend
     ports:
       - "8090:8090"
@@ -28,8 +28,7 @@ services:
       - ./docker-xapi-backend/log:/app/log
     extra_hosts:
       # - "xapi-gateway.com:192.168.2.104" #local
-      # - "xapi-gateway.com:192.168.0.47"  #linux
-      - "xapi-gateway.com:60.204.157.168"  #linux
+      - "xapi-gateway.com:192.168.0.47"  #linux
     environment:
       - DB_HOST=mysql     # 设置后端项目连接的MySQL主机名
       - DB_PORT=3306      # 设置后端项目连接的MySQL端口
