@@ -1,6 +1,7 @@
 # xapi (API开放平台)
 
-在线体验地址：[X API](http://60.204.157.168/)
+在线体验地址： <a href="http://60.204.157.168" target="_blank">XAPI</a>
+
 
 ## 项目介绍
 
@@ -12,17 +13,11 @@
 
 这个项目的架构是一个典型的分布式系统，包括多个独立的子项目，每个子项目具有特定的功能和职责。以下是每个子项目的功能和关系。
 
-1. __前端项目__ [GitHub仓库: xapi-frontend](https://github.com/xiaoxiongmao5/xapi-frontend)
-    * 功能：提供用户界面，用户可以登录、查看接口列表、发起接口调用。
-2. __后端项目__ [GitHub仓库: xapi-backend](https://github.com/xiaoxiongmao5/xapi-backend)
-    * 功能：提供用户认证、接口管理、账号管理、接口调用功能。
-3. __网关项目__ [GitHub仓库: xapi-gateway](https://github.com/xiaoxiongmao5/xapi-gateway)
-    * 功能：统一鉴权、限流、路由转发、统一日志、接口染色、统一业务处理等。
-4. __客户端SDK__ [GitHub仓库: xapi-clientsdk](https://github.com/xiaoxiongmao5/xapi-clientsdk)
-    * 功能：封装了对模拟接口项目的调用，提供了简化的API以便其他项目使用。
-5. __模拟接口项目__ 
-    * 功能：模拟第三方接口，供客户端SDK调用，用于开发和测试。
-    * 说明：这个子项目在该项目中属于第三方服务，可以使用第三方在线服务或本地开发简单项目，我直接使用的本地简单项目，就不创建仓库了。
+1. __前端项目__ [GitHub: xapi-frontend](https://github.com/xiaoxiongmao5/xapi-frontend) ：提供用户界面，用户可以登录、查看接口列表、发起接口调用。
+2. __后端项目__ [GitHub: xapi-backend](https://github.com/xiaoxiongmao5/xapi-backend) ：提供用户认证、接口管理、账号管理、接口调用功能。
+3. __网关项目__ [GitHub: xapi-gateway](https://github.com/xiaoxiongmao5/xapi-gateway) ：统一鉴权、限流、路由转发、统一日志、接口染色、统一业务处理等。
+4. __客户端SDK__ [GitHub: xapi-clientsdk](https://github.com/xiaoxiongmao5/xapi-clientsdk) ：封装了对模拟接口项目的调用，提供了简化的API以便其他项目使用。
+5. __模拟接口项目__ ：模拟第三方接口，供客户端SDK调用，用于开发和测试。（这个子项目在该项目中属于第三方服务，可使用第三方在线服务或本地开发项目，我直接使用的本地简单项目，就不创建仓库了）
 
 ## 项目业务流程图
 ![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/0c0174ae-6d1f-406a-8c03-96ccf94e293f)
