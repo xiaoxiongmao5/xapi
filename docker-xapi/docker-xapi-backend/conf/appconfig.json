@@ -1,6 +1,6 @@
 {
   "database": {
-    "savePath": "user:pwd@tcp(mysql)/xapi?charset=utf8&parseTime=true"
+    "savePath": "xapiuser:xapi123456@tcp(mysql)/xapi?charset=utf8&parseTime=true"
   },
   "server": {
     "port": 8090
