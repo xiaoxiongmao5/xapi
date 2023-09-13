@@ -24,7 +24,13 @@
     * 功能：模拟第三方接口，供客户端SDK调用，用于开发和测试。
     * 说明：这个子项目在该项目中属于第三方服务，可以使用第三方在线服务或本地开发简单项目，我直接使用的本地简单项目，就不创建仓库了。
 
+## 流程图
+![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/db308f49-7455-4433-9fa5-a6e96e48f0cd)
+
+
 ## 接口调用流程图示
+![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/9f033e8b-87a6-4a16-be1d-43badfcd76cd)
+
 ![image](https://github.com/xiaoxiongmao5/xapi-backend/assets/25204083/fa3513b8-f58c-4fa7-ac6a-e4917749f636)
 
 ## 技术栈
