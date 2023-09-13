@@ -8,19 +8,6 @@
 
 管理员可以接入并发布接口，同时统计分析各接口的调用情况；用户可以注册登录并开通接口调用权限，浏览接口以及在线进行调试，并可以通过 客户端SDK 轻松调用接口。
 
-## 项目展示
-
-<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/daf56d48-15fd-49fd-a055-abf110c9b226" width="350">
-<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/fc78748e-c042-4d21-b58a-8f5d74d44786" width="350">
-<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/a36948a2-69ed-4a37-b500-457884047b50" width="350">
-<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/7db8296a-8e7b-4085-8cf5-7d369768cd8b " width="350">
-
-![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/694fc2df-8f64-4905-b073-c193832d823c)
-
-
-
-
-
 ## 项目架构设计
 
 这个项目的架构是一个典型的分布式系统，包括多个独立的子项目，每个子项目具有特定的功能和职责。以下是每个子项目的功能和关系。
@@ -30,6 +17,15 @@
 3. __网关项目__ [GitHub: xapi-gateway](https://github.com/xiaoxiongmao5/xapi-gateway) ：统一鉴权、限流、路由转发、统一日志、接口染色、统一业务处理等。
 4. __客户端SDK__ [GitHub: xapi-clientsdk](https://github.com/xiaoxiongmao5/xapi-clientsdk) ：封装了对模拟接口项目的调用，提供了简化的API以便其他项目使用。
 5. __模拟接口项目__ ：模拟第三方接口，供客户端SDK调用，用于开发和测试。（这个子项目在该项目中属于第三方服务，可使用第三方在线服务或本地开发项目，我直接使用的本地简单项目，就不创建仓库了）
+
+## 项目展示
+
+<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/daf56d48-15fd-49fd-a055-abf110c9b226" width="350">
+<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/fc78748e-c042-4d21-b58a-8f5d74d44786" width="350">
+<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/a36948a2-69ed-4a37-b500-457884047b50" width="350">
+<img src="https://github.com/xiaoxiongmao5/xapi/assets/25204083/7db8296a-8e7b-4085-8cf5-7d369768cd8b " width="350">
+
+![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/694fc2df-8f64-4905-b073-c193832d823c)
 
 ## 项目业务流程图
 ![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/0c0174ae-6d1f-406a-8c03-96ccf94e293f)
