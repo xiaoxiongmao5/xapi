@@ -12,7 +12,7 @@
 
 这个项目的架构是一个典型的分布式系统，包括多个独立的子项目，每个子项目具有特定的功能和职责。以下是每个子项目的功能和关系。
 
-1. __前端项目__ [GitHub: xapi-frontend](https://github.com/xiaoxiongmao5/xapi-frontend) ：提供用户界面，用户可以登录、查看接口列表、发起接口调用。
+1. __前端项目__ [GitHub: xapi-frontend](https://github.com/xiaoxiongmao5/xapi-frontend){:target="_blank"} ：提供用户界面，用户可以登录、查看接口列表、发起接口调用。
 2. __后端项目__ [GitHub: xapi-backend](https://github.com/xiaoxiongmao5/xapi-backend) ：提供用户认证、接口管理、账号管理、接口调用功能。
 3. __网关项目__ [GitHub: xapi-gateway](https://github.com/xiaoxiongmao5/xapi-gateway) ：统一鉴权、限流、路由转发、统一日志、接口染色、统一业务处理等。
 4. __客户端SDK__ [GitHub: xapi-clientsdk](https://github.com/xiaoxiongmao5/xapi-clientsdk) ：封装了对模拟接口项目的调用，提供了简化的API以便其他项目使用。
