@@ -20,17 +20,12 @@
 
 ## 项目展示
 
+![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/22b1d465-e12f-4881-ae87-79218bbc2eda)
 
-![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/3dc9cfd9-097e-4ae6-a5bc-0d27953898ec)
+![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/73f56252-4589-4608-a99c-ad0e1e41df73)
 
-![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/694fc2df-8f64-4905-b073-c193832d823c)
-
-## 项目业务流程图
-![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/0c0174ae-6d1f-406a-8c03-96ccf94e293f)
-
-
-### 调用接口的流程图
-![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/9f033e8b-87a6-4a16-be1d-43badfcd76cd)
+## 调用接口的流程图
+![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/415768e2-c7f7-4c99-8728-3e22d67bb2df)
 
 
 ## 技术栈
