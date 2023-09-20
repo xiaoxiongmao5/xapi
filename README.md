@@ -25,7 +25,8 @@
 ![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/73f56252-4589-4608-a99c-ad0e1e41df73)
 
 ## 调用接口的流程图
-![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/415768e2-c7f7-4c99-8728-3e22d67bb2df)
+![image](https://github.com/xiaoxiongmao5/xapi/assets/25204083/9301951e-ad4d-4442-a6c4-1627d9c12ba6)
+
 
 
 ## 技术栈
