@@ -124,6 +124,7 @@
 * [解决运行Docker镜像报错：version `GLIBC_2.32‘ not found](https://blog.csdn.net/trinityleo5/article/details/132877098?spm=1001.2014.3001.5502)
 * [记录使用Docker Compose 部署《XAPI项目》遇道的问题及解决方案](https://blog.csdn.net/trinityleo5/article/details/132877817)
 * [Golang编写自定义IP限流中间件](https://blog.csdn.net/trinityleo5/article/details/132889703)
+* [XAPI项目架构：应对第三方签名认证的设计与调整](https://blog.csdn.net/trinityleo5/article/details/132947750?spm=1001.2014.3001.5501)
 
 ## 欢迎贡献
 
