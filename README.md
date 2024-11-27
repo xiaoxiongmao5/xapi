@@ -1,6 +1,6 @@
 # xapi (API开放平台)
 
-在线访问： <a target="_blank" href="http://60.204.157.168">XAPI</a>
+在线访问： <a target="_blank" href="http://101.132.169.210:8080">XAPI</a>
 
 ## 项目介绍
 
