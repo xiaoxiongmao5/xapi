@@ -1,0 +1,58 @@
+version: '3'
+
+services:
+  backend:
+    image: xiaoxiongmao5/xapi-backend:1.0.8
+    container_name: xapi-backend
+    ports:
+      - "8090:8090"
+    depends_on:
+      - mysql
+      - gateway
+    volumes:
+      - ./docker-xapi-backend/conf:/app/conf
+      - ./docker-xapi-backend/log:/app/log
+    extra_hosts:
+      # - "xapi-gateway.com:192.168.2.104" #local
+      - "xapi-gateway.com:172.19.17.153"  #linux
+    environment:
+      - DB_HOST=mysql     # 设置后端项目连接的MySQL主机名
+      - DB_PORT=3306      # 设置后端项目连接的MySQL端口
+      - DB_USER=xapiuser      # 设置后端项目连接的MySQL用户名
+      - DB_PASSWORD=xapi123456  # 设置后端项目连接的MySQL密码
+      - DB_NAME=xapi      # 设置后端项目连接的MySQL数据库名称
+      - NACOS_HOST=nacos  # 设置网关项目连接的Nacos主机名
+      - NACOS_PORT=8848   # 设置Nacos的端口
+      - GATEWAY_HOST=gateway # 设置后端项目访问网关的主机名
+    restart: always
+    # command: ["./scripts/wait-for-nacos.sh", "./xapi-backend"]  #command内应该是可执行文件
+
+  gateway:
+    image: xiaoxiongmao5/xapi-gateway:1.0.5
+    container_name: xapi-gateway
+    ports:
+      - "8094:8094"
+    volumes:
+      - ./docker-xapi-gateway/conf:/app/conf
+      - ./docker-xapi-gateway/log:/app/log
+    environment:
+      - NACOS_HOST=nacos
+      - NACOS_PORT=8848
+    restart: always
+
+  mysql:
+    image: mysql:8.0
+    container_name: xapi-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456 # 设置MySQL的root密码
+      - MYSQL_ALLOW_EMPTY_PASSWORD=no
+      - MYSQL_DATABASE=xapi # 创建一个MySQL数据库，并设置其名称
+      - MYSQL_USER=xapiuser
+      - MYSQL_PASSWORD=xapi123456
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker-mysql8.0/mysql-data:/var/lib/mysql # 将MySQL数据持久化到宿主机的目录
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql # 这是 MySQL 容器初始化时会自动运行的 SQL 初始化脚本目录。
+      # - ./docker-mysql8.0/my.cnf:/etc/mysql/my.cnf  # 将 my.cnf 映射到容器内的 MySQL 配置文件
+    restart: always
