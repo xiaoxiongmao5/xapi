@@ -2,7 +2,8 @@ dubbo:
   registries:
     nacos:
       protocol: nacos
-      address: nacos:8848
+      #address: nacos:8848
+      address: 172.19.17.153:8848
   protocols:
     triple:
       name: tri
